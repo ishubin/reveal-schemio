@@ -1,0 +1,56 @@
+.schemio-player {
+    position: relative;
+}
+.schemio-player, .schemio-player iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.slides section:has(> .schemio-player) {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.schemio-player .schemio-player-spinner-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.4);
+}
+.schemio-player .schemio-player-spinner {
+    color: #999999;
+}
+.schemio-player .schemio-player-spinner,
+.schemio-player .schemio-player-spinner:after {
+    box-sizing: border-box;
+}
+.schemio-player .schemio-player-spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.schemio-player .schemio-player-spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6.4px solid currentColor;
+    border-color: currentColor transparent currentColor transparent;
+    animation: schemio-player-spinner 1.2s linear infinite;
+}
+@keyframes schemio-player-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

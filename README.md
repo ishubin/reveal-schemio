@@ -38,23 +38,23 @@ Make sure to add `reveal-schemio.css` files in your presentation deck `index.htm
 ```html
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-		<link rel="stylesheet" href="plugin/reveal-schemio/reveal-schemio.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="plugin/reveal-schemio/reveal-schemio.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
             </div>
         </div>
     </body>
@@ -84,7 +84,7 @@ Here is an example of multiple Revealjs slides with Schemio player
 ```
 
 
-Intermediate Schemio animations withing the slide
+Intermediate Schemio animations within the slide
 -------------------------------------------------
 
 `Reveal Schemio` plugin intercepts `Right` and `Space` keys for switching the slides and, if it is configured in specified Schemio player, it may instead send pre-configured events into the player, thus working as a sub-deck. This way you may create intermediate animations with their own frames before switching to next slide.

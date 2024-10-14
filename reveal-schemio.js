@@ -1,3 +1,8 @@
+/**
+ * A Revealjs plugin which helps displaying and controlling of Schemio (https://schem.io) embedded player
+ *
+ * @author Ivan Shubin
+ */
 
 const RevealSchemio = (() => {
 

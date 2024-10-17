@@ -4,6 +4,9 @@ Reveal Schemio Plugin
 A [Reveal.js](https://github.com/hakimel/reveal.js) plugin for displaying [Schemio](https://schem.io) interactive animations.
 It overrides `Right` and `Space` keys on the slides with Schemio player and sends configured events to the player, which lets you trigger interactive animations inside of your Reveal presentation slide.
 
+A live demo of a simple presentation with embedded Schemio player is available at https://ishubin.github.io/reveal-schemio/.
+The code of the presenation is available at https://github.com/ishubin/reveal-schemio/blob/main/example/index.html
+
 Installing the plugin
 ------------------------
 

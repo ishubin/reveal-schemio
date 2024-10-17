@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/reveal-schemio/reveal-schemio.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>
+					<h3>Simple player</h3>
+					<div class="schemio-player"
+						data-url="https://schem.io/embed/docs/Br6TfmWI3wz1qOAJ?header=true&zoomButton=true&zoomInput=true&headerBackground=rgba%2872%2C72%2C72%2C1.0%29&headerColor=rgba%28255%2C255%2C255%2C1.0%29&linkColor=rgba%28112%2C190%2C255%2C1.0%29"
+						>
+					</div>
+				</section>
+				<section>
+					<h3>Player with events interception</h3>
+					<div class="schemio-player"
+						data-url="https://schem.io/embed/docs/0wgKzJg4RUI4z3a7?header=true&zoomButton=true&zoomInput=true&headerBackground=rgba%2872%2C72%2C72%2C1.0%29&headerColor=rgba%28255%2C255%2C255%2C1.0%29&linkColor=rgba%28112%2C190%2C255%2C1.0%29"
+						data-frames="4"
+						data-frame-prefix="Frame "
+						data-frame-end="Frame 5"
+						data-item-name="GlobalEventHandler">
+					</div>
+				</section>
+				<section>The end</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/reveal-schemio/reveal-schemio.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealSchemio ]
+			});
+		</script>
+	</body>
+</html>
